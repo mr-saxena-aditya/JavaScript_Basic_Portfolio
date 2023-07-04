@@ -1,4 +1,4 @@
-Full Screen Responsive Animation
+Full Screen Responsive Loader with Progress Bar Animation
 
 This project demonstrates how to create a full-screen, responsive animation using JavaScript, CSS, and HTML.
 
