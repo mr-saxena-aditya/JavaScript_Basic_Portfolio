@@ -36,12 +36,57 @@ body {
     color: white;
   }
   
-  
-
   .logo {
     width: 50px;
     height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
   }
   
-  /* Add styles for your navigation links here */
+
+  #image-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  
+  #svg-image {
+    width: 200px;
+    height: 200px;
+  }
+  
+
+  .nav-name {
+    font-weight: bolder;
+  }
+
+  .section {
+    fill: #f0f0f0;
+    transition: fill 0.3s ease-in-out;
+  }
+  
+  .section:hover {
+    fill: black;
+  }
+  
+  .nav-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .nav-links a {
+    display: block;
+    padding: 10px;
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    color: black;
+  }
   
