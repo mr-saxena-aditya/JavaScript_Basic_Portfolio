@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+  }
+  
+  .navigation-bar {
+    height: 50px;
+    width: 100%;
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    padding-left: 20px; /* Add left padding to create space for the circle */
+  }
+  
+  .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #f0f0f0;
+    transition: transform 0.3s ease-in-out;
+    margin-right: 10px; /* Add right margin to create space between circle and links */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .circle:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Add styles for your navigation links here */
+  

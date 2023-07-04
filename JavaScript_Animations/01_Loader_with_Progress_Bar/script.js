@@ -1,7 +1,7 @@
 // Execute when DOM content is loaded
 window.addEventListener('DOMContentLoaded', (event) => {
   // Duration of the animation in milliseconds
-  const animationDuration = 1000;
+  const animationDuration = 2000;
 
   // Calculate the progress increment interval
   const progressInterval = 100 / (animationDuration / 10);

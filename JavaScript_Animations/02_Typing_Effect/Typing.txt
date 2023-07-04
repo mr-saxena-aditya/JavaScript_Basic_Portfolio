@@ -1,0 +1,20 @@
+Text Typing Animation
+
+This project demonstrates a typing animation that displays the words "Aditya Saxena" on the screen.
+
+Instructions:
+1. Open the index.html file in a web browser.
+2. The animation will start automatically, typing out the words "Aditya Saxena" on the screen.
+3. The animation is full screen and responsive.
+4. The background color is black and the font color is white.
+5. The font size is 70px.
+
+Customization:
+- To change the displayed text, modify the `text` variable in the script.js file.
+- To adjust the typing speed, modify the delay in the `setTimeout` function in the script.js file.
+- You can modify the CSS in the styles.css file to customize the appearance of the animation.
+
+Note: Make sure all the files (index.html, styles.css, and script.js) are in the same directory when running the project.
+
+Author: Aditya Saxena
+Date: July 3, 2023
