@@ -20,5 +20,5 @@ Steps:
 
 Note: Adjust the animation duration and styling properties (background color, font size, font family, etc.) as per your requirements.
 
-Author: Your Name
-Date: Current Date
+Author: Aditya Saxena
+Date: July 3, 2023
