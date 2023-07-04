@@ -1,0 +1,24 @@
+Full Screen Responsive Animation
+
+This project demonstrates how to create a full-screen, responsive animation using JavaScript, CSS, and HTML.
+
+Steps:
+1. Create an HTML file (index.html) and add the basic structure.
+2. Link the CSS file (style.css) to the HTML file using the <link> tag.
+3. Inside the HTML file, create a loader element (<div id="loader">) with two child elements:
+   - A loading text element (<div id="loading-text">) to display the progress percentage.
+   - A progress bar element (<div id="progress-bar">) to visualize the progress.
+4. Create a JavaScript file (script.js) and link it to the HTML file using the <script> tag.
+5. In the JavaScript file, add an event listener for the 'DOMContentLoaded' event.
+6. Inside the event listener, define the animation duration and progress interval variables.
+7. Get the loading text and progress bar elements using the document.getElementById() method.
+8. Define an animate() function that increments the progress and updates the elements accordingly.
+9. Start the animation by calling the animate() function.
+10. Handle the animation completion by clearing the interval and performing any additional actions.
+11. Save the HTML, CSS, and JavaScript files in the same directory.
+12. Open the HTML file in a web browser to see the full-screen, responsive animation in action.
+
+Note: Adjust the animation duration and styling properties (background color, font size, font family, etc.) as per your requirements.
+
+Author: Your Name
+Date: Current Date
