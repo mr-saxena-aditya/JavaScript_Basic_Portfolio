@@ -11,8 +11,40 @@
 </head>
 <body>
     <div class="container">
-        <h2><span>ANIME JS</span> <br/>Combination Animation - 1</h2>
+        <h2><span>anime js</span> <br/>Combination Animation - 1</h2>
     </div>
-  <script src="script.js"></script>
+<script src="script.js"></script>
+<script src="./anime.min.js"></script>
+<script>
+  const container = document.querySelector('.container')
+  for (var i = 0; i <= 100; i++){
+      const blocks = document.createElement('div');
+      blocks.classList.add('block');
+      container.appendChild(blocks);
+  }
+
+  function animate_blocks(){
+    anime({
+        targets:'.block',
+        translateX:function(){
+          return anime.random(-800,800);
+        },
+        translateY:function(){
+          return anime.random(-500,500);
+        },
+        scale:function(){
+          return anime.random(-1,6);
+        },
+
+        easing: 'linear',
+        duration: 3000,
+        delay: anime.stagger(10),
+        complete: animate_blocks,
+    })
+  }
+
+
+  animate_blocks();
+</script>
 </body>
 </html>

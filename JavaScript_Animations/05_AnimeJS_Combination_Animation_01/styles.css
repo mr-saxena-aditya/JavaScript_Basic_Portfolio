@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: red;
+    background-color: #f7e7CE;
 }
 
 .container{
@@ -26,4 +26,31 @@ body {
     border-style: dotted;
     border-color: black;
     border-width: 0.1px;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 4vw;
+    line-height: 1em;
+    z-index: 1000;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+}
+
+h2 span {
+    font-size: 0.5em;
+    font-weight: 500;
+    line-height: 3em;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.block{
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background-color:crimson;
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.2);
 }
