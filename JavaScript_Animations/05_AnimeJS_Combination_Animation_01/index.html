@@ -13,38 +13,50 @@
     <div class="container">
         <h2><span>anime js</span> <br/>Combination Animation - 1</h2>
     </div>
-<script src="script.js"></script>
-<script src="./anime.min.js"></script>
-<script>
-  const container = document.querySelector('.container')
-  for (var i = 0; i <= 100; i++){
-      const blocks = document.createElement('div');
-      blocks.classList.add('block');
-      container.appendChild(blocks);
-  }
+    <!-- JavaScript code -->
+    <script src="script.js"></script>
+    <script src="./anime.min.js"></script>
+    <script>
+      // Select the container element
+      const container = document.querySelector('.container');
 
-  function animate_blocks(){
-    anime({
-        targets:'.block',
-        translateX:function(){
-          return anime.random(-800,800);
-        },
-        translateY:function(){
-          return anime.random(-500,500);
-        },
-        scale:function(){
-          return anime.random(-1,6);
-        },
+      // Create 100 div blocks and add them to the container
+      for (var i = 0; i <= 150; i++){
+          const blocks = document.createElement('div');
+          blocks.classList.add('block');
+          container.appendChild(blocks);
+      }
 
-        easing: 'linear',
-        duration: 3000,
-        delay: anime.stagger(10),
-        complete: animate_blocks,
-    })
-  }
+      // Define the animation function
+      function animate_blocks(){
+        anime({
+            // Target all elements with the 'block' class
+            targets: '.block',
+            // Set random translation along the X-axis
+            translateX: function(){
+              return anime.random(-800,800);
+            },
+            // Set random translation along the Y-axis
+            translateY: function(){
+              return anime.random(-500,500);
+            },
+            // Set random scale values
+            scale: function(){
+              return anime.random(-1,6);
+            },
+            // Use linear easing
+            easing: 'linear',
+            // Set the duration of the animation
+            duration: 3000,
+            // Delay each element with a stagger effect
+            delay: anime.stagger(10),
+            // Call the animate_blocks function again once the animation is complete
+            complete: animate_blocks,
+        });
+      }
 
-
-  animate_blocks();
-</script>
+      // Call the animation function to start the animation
+      animate_blocks();
+    </script>
 </body>
 </html>
